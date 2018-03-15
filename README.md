@@ -3,6 +3,7 @@
 A gem for validatin Spanish telephone numbers. Check if a number is valid, type (fixed, landline)
 and get area code and provinces for landlines.
 
+
 ## Installation
 
 Add this line to your application's Gemfile:
