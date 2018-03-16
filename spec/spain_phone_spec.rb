@@ -2,6 +2,7 @@ RSpec.describe SpainPhone do
 
   before(:all) do
     @landline = SpainPhone::Phone.new('937886215')
+    @landline_2 = SpainPhone::Phone.new('917445400')
     @mobile_phone = SpainPhone::Phone.new('634213351')
     @invalid_phone_numbers = ['0123','345345','999333666555', '222555123']
   end
@@ -42,5 +43,10 @@ RSpec.describe SpainPhone do
     [@landline, @mobile_phone].each do |phone|
       expect(phone.area_code).to eq(phone.phone_number[0..2])
     end
+  end
+
+  it "returns province from valid landline" do
+    expect(@landline.province).to eq(:Barcelona)
+    expect(@landline_2.province).to eq(:Madrid)
   end
 end

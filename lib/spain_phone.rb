@@ -21,7 +21,7 @@ module SpainPhone
     attr_accessor :phone_number
 
     def initialize phone_number
-      @phone_number = phone_number.to_s
+      @phone_number = phone_number.to_s.gsub(/\D/, '')
     end
 
     def valid?
