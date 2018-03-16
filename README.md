@@ -41,7 +41,7 @@ phone.international => '+34936546515'
 phone.phone_number => '936546515'
 ``` 
 
-#####Available phone types
+##### Available phone types
 - landline
 - mobile
 - toll-free
@@ -56,7 +56,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/spain_phone.
+Bug reports and pull requests are welcome on GitHub at https://github.com/nevadajames/spain_phone.
 
 ## License
 
