@@ -2,10 +2,6 @@ require "spain_phone/version"
 
 module SpainPhone
 
-  def self.greet
-    puts "greet"
-  end
-
   AREA_CODES   =  {
         Marbella: [822], Badajoz:[ 824, 924], Guipuzcoa: [843,943],
         Navarra: [848, 948], Granada: [858, 958], Murcia: [868, 968], Baleares:[871, 971],
@@ -34,7 +30,7 @@ module SpainPhone
     end
 
     def area_code
-      return @phone_number[0..2] if valid?
+      return @phone_number.to_s[0..2] if valid?
     end
 
     def country_code

@@ -34,6 +34,8 @@ phone.phone_type => 'landline'
 
 phone.province => :Barcelona
 
+phone.area_code => '936'
+
 phone.country_code => '+34'
 
 phone.international => '+34936546515'
