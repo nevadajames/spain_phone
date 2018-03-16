@@ -1,6 +1,6 @@
 # SpainPhone
 
-A gem for validatin Spanish telephone numbers. Check if a number is valid, type (fixed, landline)
+A gem for validating Spanish telephone numbers. Check if a number is valid, type (fixed, landline)
 and get area code and provinces for landlines.
 
 
@@ -22,7 +22,31 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Create a new SpainPhone::Phone object passing a the telephone number as a string in a single argument
+without the country code.
+
+```ruby 
+phone = SpainPhone::Phone.new('936546515')
+
+phone.valid? => true
+
+phone.phone_type => 'landline'
+
+phone.province => :Barcelona
+
+phone.country_code => '+34'
+
+phone.international => '+34936546515'
+
+phone.phone_number => '936546515'
+``` 
+
+#####Available phone types
+- landline
+- mobile
+- toll-free
+- premium
+ 
 
 ## Development
 
