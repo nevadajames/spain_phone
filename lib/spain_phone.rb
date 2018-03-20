@@ -16,6 +16,7 @@ module SpainPhone
         Valladolid: [983], Asturias: [984, 985], Orense: [988]
       }.freeze
 
+
   class Phone
 
     attr_accessor :phone_number
@@ -60,5 +61,19 @@ module SpainPhone
         end
       end
     end
+  end
+
+  class PhoneGenerator
+    def self.generate_landline
+      area_code = AREA_CODES.values.sample
+      if area_code.is_a?(Array)
+        area_code = area_code.sample
+      end
+      landline = [area_code, '123456'].join
+
+      Phone.new(landline)
+    end
+
+    def self.generate_mobile
   end
 end

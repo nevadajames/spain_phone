@@ -5,7 +5,7 @@ require "spain_phone/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "spain_phone"
-  spec.version       = "0.1.1"
+  spec.version       = "0.1.2"
   spec.authors       = ["nevadajames"]
   spec.email         = ["nevadajames@gmail.com"]
 
@@ -22,6 +22,6 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 1.16"
-  spec.add_development_dependency "rake", "~> 10.5.0"
+  spec.add_development_dependency "rake", "~> 0"
   spec.add_development_dependency "rspec", "~> 3.0"
 end
