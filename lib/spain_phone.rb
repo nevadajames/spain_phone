@@ -69,11 +69,30 @@ module SpainPhone
       if area_code.is_a?(Array)
         area_code = area_code.sample
       end
-      landline = [area_code, '123456'].join
-
+      extension = 6.times.map { rand(0..9) }.join
+      landline = [area_code, extension].join
       Phone.new(landline)
     end
 
     def self.generate_mobile
+      extension = 8.times.map { rand(0..9) }.join
+      leading =  ['6','7'].sample
+      mobile = [leading, extension].join
+      Phone.new(mobile)
+    end
+
+    def self.generate_toll_fee
+      extension = 6.times.map { rand(0..9) }.join
+      leading =  ['900','800'].sample
+      number = [leading, extension].join
+      Phone.new(number)
+    end
+
+    def self.generate_premium
+      extension = 6.times.map { rand(0..9) }.join
+      leading =  ['902','802'].sample
+      number = [leading, extension].join
+      Phone.new(number)
+    end
   end
 end
