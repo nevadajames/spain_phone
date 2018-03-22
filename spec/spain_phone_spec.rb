@@ -1,6 +1,6 @@
 RSpec.describe SpainPhone do
 
-  before(:all) do
+  before(:each) do
     @landline = SpainPhone::Phone.new('937886215')
     @landline_2 = SpainPhone::Phone.new('917445400')
     @mobile_phone = SpainPhone::Phone.new('634213351')
