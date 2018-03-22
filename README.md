@@ -43,6 +43,23 @@ phone.international => '+34936546515'
 phone.phone_number => '936546515'
 ``` 
 
+Random phone numbers can also be generated for each type using the Generator class. All the methods from SpainPhone::Phone 
+are then available for each generated object.
+
+```ruby 
+SpainPhone::Generator.landline 
+=> #<SpainPhone::Phone:0x00005636df2b4078 @phone_number="941804356">
+
+SpainPhone::Generator.mobile 
+=> #<SpainPhone::Phone:0x00005636df2c3690 @phone_number="727004177">
+
+SpainPhone::Generator.premium 
+=> #<SpainPhone::Phone:0x00005636df2ca8f0 @phone_number="902399160">
+
+SpainPhone::Generator.toll_free 
+=> <SpainPhone::Phone:0x00005636df2d4530 @phone_number="900968312">
+``` 
+
 ##### Available phone types
 - landline
 - mobile
