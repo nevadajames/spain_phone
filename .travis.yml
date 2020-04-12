@@ -3,4 +3,5 @@ language: ruby
 cache: bundler
 rvm:
   - 2.5.0
+dist: trusty
 script: 'bundle exec rake'
