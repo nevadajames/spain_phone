@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/nevadajames/spain_phone.svg?branch=master)](https://travis-ci.com/nevadajames/spain_phone)
+
 # SpainPhone
 
 A gem for validating Spanish telephone numbers. Check if a number is valid, type (fixed, landline)
