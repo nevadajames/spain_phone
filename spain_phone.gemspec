@@ -6,7 +6,7 @@ require 'spain_phone/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'spain_phone'
-  spec.version       = '0.1.2'
+  spec.version       = '0.1.3'
   spec.authors       = ['nevadajames']
   spec.email         = ['nevadajames@gmail.com']
 
